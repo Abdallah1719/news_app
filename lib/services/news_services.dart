@@ -16,7 +16,6 @@ class NewsService {
           title: artical['title'],
           subtitle: artical['description']);
       articallist.add(articalModel);
-      print(articales);
     }
     return articallist;
   }

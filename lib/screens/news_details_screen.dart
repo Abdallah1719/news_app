@@ -18,7 +18,7 @@ class NewsDetailPage extends StatelessWidget {
               if (article.image != null) Image.network(article.image!),
               const SizedBox(height: 16),
               Text(
-                article.title ?? 'No Title',
+                article.title,
                 style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
