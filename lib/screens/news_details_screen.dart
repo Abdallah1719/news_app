@@ -8,7 +8,20 @@ class NewsDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+          title: const Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            ' News',
+            style: TextStyle(color: Colors.black),
+          ),
+          Text(
+            'Cloud',
+            style: TextStyle(color: Colors.orange),
+          ),
+        ],
+      )),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
